@@ -54,9 +54,7 @@ abstract class Controller extends BaseController
 }
 ```
 
-## Usage
-
-### Signature
+## Signature
 ```php
 public function registerAlertMiddleware(string $model, array $except = []);
 ```
@@ -64,6 +62,13 @@ public function registerAlertMiddleware(string $model, array $except = []);
     * A string used in the flash messages for example `$model = 'Book'` will result in: `The Book has been successfully added`
 * $except
     * An array of methods that are skipped while registering middleware.
+
+## Usage
+
+If the middleware is registered and a `store`, `update` or `destory` method has been successfully executed.
+A success message will be flashed in the current session under the key `alert`.
+
+If the current session has a message under the key `warning` or an exception is thrown, the request will not be considered successful.
 
 
 ### Example
@@ -121,6 +126,15 @@ class BookController extends Controller
     }
     ...
 }
+```
+
+### Displaying flash alerts
+```blade
+@if (session()->has('alert'))
+    <div class="alert alert-success" role="alert">
+        {{ session('alert') }}
+    </div>
+@endif
 ```
 
 ## Change Alert messages

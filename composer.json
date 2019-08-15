@@ -1,6 +1,6 @@
 {
-    "name": "royvoetman/laravel-gitlab-storage",
-    "description": "Automatically flash success alerts in laravel resources controllers",
+    "name": "royvoetman/laravel-flash-alerts",
+    "description": "Automatically flash success alerts in resources controllers: `store`, `update` and `destroy` methods.",
     "license": "MIT",
     "authors": [
         {
