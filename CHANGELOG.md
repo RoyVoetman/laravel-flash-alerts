@@ -1,4 +1,4 @@
-## Changelog
+# Changelog
 
 All notable changes to `laravel-flash-alerts` will be documented in this file
 
