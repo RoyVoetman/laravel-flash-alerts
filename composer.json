@@ -1,0 +1,28 @@
+{
+    "name": "royvoetman/laravel-gitlab-storage",
+    "description": "Automatically flash success alerts in laravel resources controllers",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roy Voetman",
+            "email": "royvoetman@outlook.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "illuminate/support": "^5.1|^5.2|^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "RoyVoetman\\LaravelFlashAlerts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RoyVoetman\\LaravelFlashAlerts\\FlashAlertsServiceProvider"
+            ]
+        }
+    }
+}
