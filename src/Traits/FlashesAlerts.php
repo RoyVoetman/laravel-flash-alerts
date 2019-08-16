@@ -20,7 +20,7 @@ trait FlashesAlerts
         $alertMiddlewareMap = Arr::except($this->alertMiddlewareMap(), $except);
         
         foreach ($alertMiddlewareMap as $method => $middleware) {
-            $this->middleware("$middleware:$model")
+            $this->middleware("$middleware,$model")
                 ->only($method);
         }
     }
