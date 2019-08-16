@@ -1,5 +1,5 @@
 # Laravel Flash Alerts
-Automatically flash success alerts in resources controllers: `store`, `update` and `destroy` methods.
+Automatically flash success alerts in your resource controllers: `store`, `update` and `destroy` methods.
 
 [![Latest Version](https://img.shields.io/packagist/v/royvoetman/laravel-flash-alerts.svg?style=flat-square)](https://packagist.org/packages/royvoetman/laravel-flash-alerts)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
