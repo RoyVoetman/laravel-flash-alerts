@@ -13,17 +13,17 @@ composer require royvoetman/laravel-flash-alerts
 
 Add FlashAlerts middleware to the routeMiddleware array in app/Http/Kernel.php
 ```php
-    /**
-     * The application's route middleware.
-     *
-     * These middleware may be assigned to groups or used individually.
-     *
-     * @var array
-     */
-    protected $routeMiddleware = [
-        ...
-        'flash.alerts' => \RoyVoetman\LaravelFlashAlerts\Middleware\FlashAlerts::class
-    ];
+ /**
+  * The application's route middleware.
+  *
+  * These middleware may be assigned to groups or used individually.
+  *
+  * @var array
+  */
+ protected $routeMiddleware = [
+    ...
+    'flash.alerts' => \RoyVoetman\LaravelFlashAlerts\Middleware\FlashAlerts::class
+ ];
 ```
 
 Add the FlashesAlerts trait to your applications BaseController
