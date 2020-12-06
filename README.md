@@ -37,7 +37,7 @@ use RoyVoetman\LaravelFlashAlerts\Traits\FlashesAlerts;
 
 abstract class Controller extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests, FlashesAlerts;
+    use FlashesAlerts;
 
     ...
 }
