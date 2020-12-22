@@ -1,5 +1,7 @@
 # Laravel Flash Alerts
-Automatically flash success alerts in your resource controllers: `store`, `update` and `destroy` methods.
+This packages will automatically flash success messages to the session when a controllers: `store`, `update` or `destroy` was successfully executed.
+
+An execution is considered successful when no exceptions where raised and there are no messages defined in the current session under the key `warning`.
 
 [![Latest Version](https://img.shields.io/packagist/v/royvoetman/laravel-flash-alerts.svg?style=flat-square)](https://packagist.org/packages/royvoetman/laravel-flash-alerts)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
@@ -55,7 +57,7 @@ public function registerAlertMiddleware(string $model, array $except = []);
 ## Usage
 
 If the middleware is registered and a `store`, `update` or `destory` method has been successfully executed.
-A success message will be flashed in the current session under the key `alert`.
+A message will be flashed in the current session under the key `alert`.
 
 If the current session has a message under the key `warning` or an exception is thrown, the request will not be considered successful.
 
