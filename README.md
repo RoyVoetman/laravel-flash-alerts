@@ -1,7 +1,7 @@
 # Laravel Flash Alerts
-This packages will automatically flash success messages to the session when a controllers: `store`, `update` or `destroy` was successfully executed.
+This packages will automatically flash success messages to the session when a controller's: `store`, `update` or `destroy` method was successfully executed.
 
-An execution is considered successful when no exceptions where raised and there are no messages defined in the current session under the key `warning`.
+An execution is considered successful when no exceptions were raised and no messages are defined in the current session under the key `warning`.
 
 [![Latest Version](https://img.shields.io/packagist/v/royvoetman/laravel-flash-alerts.svg?style=flat-square)](https://packagist.org/packages/royvoetman/laravel-flash-alerts)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
