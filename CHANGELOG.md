@@ -20,3 +20,6 @@ All notable changes to `laravel-flash-alerts` will be documented in this file
 
 ### 1.0.5 - 2020-12-06
 - Added php 8 support
+
+### 1.0.6 - 2023-06-17
+- Added laravel 9 and 10 support
